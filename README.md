@@ -2,7 +2,7 @@
 
 # WARNING
 
-## This repo was archived!
+## This repo has been archived!
 
 NO further developement will be made in the foreseen future.
 
