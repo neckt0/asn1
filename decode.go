@@ -387,6 +387,12 @@ func (ctx *Context) getRawValuesFromBytes(data []byte, max int) ([]*rawValue, er
 			return rawValues, nil
 		}
 	}
+	
+	//Required to work with empty sequences
+	if max == 0 {
+		return rawValues, nil
+	}
+	
 	return nil, parseError("too many items for Sequence")
 }
 
